@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Merhaba <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Bu komutu kullanma yetkiniz yok.",
+    "provide_message": "Lütfen bir mesaj sağlayın. Örnek: /dm_all Herkese merhaba!",
+    "message_sent": "Mesaj tüm kullanıcılara gönderildi."
+  },
+  "callback": {
+    "profile_info": "👤 Profil Bilgileri:\nID: <code><b>{user_id}</b></code>\nAdı: <b>{first_name}</b>\nSoyadı: <b>{last_name}</b>\nKullanıcı Adı: <b>{username}</b>\nOluşturulma: <b>{creation_date}</b>\nBakiye: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Yardım</b>\n\n👤 <b>Profil</b> : Hesap bilgilerinizi görüntüleyin.\n💳 <b>Yükle</b> : Kripto para birimleri aracılığıyla hesabınıza para ekleyin.\n🏠 <b>Ev</b> : Ana ekrana dönün.\n\n",
+      "admin": "/dm_all [HTML formatlı mesaj] : Yöneticiler hariç tüm kullanıcılara mesaj gönderin.\n/create_gift [miktar] : Belirtilen bakiye ile hediye kartı oluşturun.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Sağlanan kodu kullanarak bir hediye kartı değiştirin.\n\nHerhangi bir sorunuz varsa, destek ekibimizle iletişime geçin."
+    },
+    "top_up_message": "💰 <b>Kripto para birimi ödeme adresleriniz</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Adres bulunamadı.",
+    "license_key": "İşte lisansınız: {license_key}",
+    "insufficient_balance": "Bakiyeniz yetersiz. {missing_amount:.2f}€ eksik.",
+    "select_language": "Lütfen bir dil seçin."
+  },
+  "gift": {
+    "provide_valid_amount": "Lütfen geçerli bir miktar girin. Örnek: /create_gift 20",
+    "gift_amount_zero": "Hediye miktarı sıfır olamaz. Lütfen geçerli bir hediye kodu sağlayın.",
+    "gift_card_created": "Hediye kartı oluşturuldu: <code>{code}</code> için {amount}€",
+    "provide_gift_code": "Lütfen bir hediye kartı sağlayın. Örnek: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Hediye kartı değiştirildi! {amount}€ bakiyenize eklendi.",
+    "admin_notification": "Kullanıcı {first_name} (ID: {user_id}) {code} kodlu hediye kartını değiştirdi",
+    "invalid_gift_code": "Geçersiz veya zaten kullanılmış hediye kartı kodu."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Lisans Satın Al - 5€",
+    "top_up_button": "💳 Yükle",
+    "help_button": "❓ Yardım",
+    "home_button": "🏠 Ev"
+  },
+  "payment": {
+    "add_funds_message": "💸 {result}€ ({value_coin} {coin.upper()}) aldık!"
+  }
+}

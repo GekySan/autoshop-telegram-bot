@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 こんにちは <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "このコマンドを使用する権限がありません。",
+    "provide_message": "メッセージを入力してください。例：/dm_all みんな、こんにちは！",
+    "message_sent": "メッセージが全ユーザーに送信されました。"
+  },
+  "callback": {
+    "profile_info": "👤 プロフィール情報：\nID: <code><b>{user_id}</b></code>\n名前： <b>{first_name}</b>\n苗字： <b>{last_name}</b>\nユーザー名： <b>{username}</b>\n作成日： <b>{creation_date}</b>\n残高： <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>ヘルプ</b>\n\n👤 <b>プロフィール</b> ：アカウント情報を表示します。\n💳 <b>チャージ</b> ：暗号通貨を介してアカウントに資金を追加します。\n🏠 <b>ホーム</b> ：メイン画面に戻ります。\n\n",
+      "admin": "/dm_all [HTMLフォーマットのメッセージ] ：管理者以外のすべてのユーザーにメッセージを送信します。\n/create_gift [金額] ：指定された残高でギフトカードを作成します。\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] ：提供されたコードを使用してギフトカードを引き換えます。\n\n質問がある場合は、サポートにお問い合わせください。"
+    },
+    "top_up_message": "💰 <b>暗号通貨によるお支払いアドレス</b> ：\n\n➡️ <b>ビットコイン (BTC)</b> ： <code>{btc_address}</code>\n🔼 最低額： <code>{minimum_btc}</code>\n\n➡️ <b>イーサリアム (ETH)</b> ： <code>{eth_address}</code>\n🔼 最低額： <code>{minimum_eth}</code>\n\n➡️ <b>ライトコイン (LTC)</b> ： <code>{ltc_address}</code>\n🔼 最低額： <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "アドレスが見つかりません。",
+    "license_key": "こちらがライセンスキーです： {license_key}",
+    "insufficient_balance": "残高が不足しています。不足額は {missing_amount:.2f}€ です。",
+    "select_language": "言語を選択してください。"
+  },
+  "gift": {
+    "provide_valid_amount": "有効な金額を入力してください。例：/create_gift 20",
+    "gift_amount_zero": "ギフト金額はゼロにできません。有効なギフトコードを入力してください。",
+    "gift_card_created": "ギフトカードが作成されました： <code>{code}</code> 金額：{amount}€",
+    "provide_gift_code": "ギフトカードを入力してください。例：/redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "ギフトカードが引き換えられました！{amount}€ が残高に追加されました。",
+    "admin_notification": "ユーザー {first_name} (ID: {user_id}) がコード：{code} のギフトカードを引き換えました",
+    "invalid_gift_code": "無効または既に使用されているギフトカードコードです。"
+  },
+  "inline": {
+    "profile_button": "👤 プロフィール",
+    "buy_license_button": "🛒 ライセンスを購入 - 5€",
+    "top_up_button": "💳 チャージ",
+    "help_button": "❓ ヘルプ",
+    "home_button": "🏠 ホーム"
+  },
+  "payment": {
+    "add_funds_message": "💸 {result}€ ({value_coin} {coin.upper()}) を受け取りました！"
+  }
+}

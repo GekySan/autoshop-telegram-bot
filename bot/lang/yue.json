@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 你好 <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "你沒有使用此命令的權限。",
+    "provide_message": "請提供一條消息。例子: /dm_all 大家好！",
+    "message_sent": "消息已發送給所有用戶。"
+  },
+  "callback": {
+    "profile_info": "👤 個人資料信息：\nID: <code><b>{user_id}</b></code>\n名字: <b>{first_name}</b>\n姓氏: <b>{last_name}</b>\n用戶名: <b>{username}</b>\n創建日期: <b>{creation_date}</b>\n餘額: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>幫助</b>\n\n👤 <b>個人資料</b> : 查看您的帳戶信息。\n💳 <b>充值</b> : 通過加密貨幣為您的帳戶添加資金。\n🏠 <b>首頁</b> : 返回主屏幕。\n\n",
+      "admin": "/dm_all [帶有HTML格式的消息] : 向所有用戶發送消息，管理員除外。\n/create_gift [金額] : 使用指定的餘額創建禮品卡。\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : 使用提供的代碼兌換禮品卡。\n\n如有任何疑問，請聯繫我們的支持。"
+    },
+    "top_up_message": "💰 <b>您的加密貨幣付款地址</b> :\n\n➡️ <b>比特幣 (BTC)</b> : <code>{btc_address}</code>\n🔼 最低限度: <code>{minimum_btc}</code>\n\n➡️ <b>以太坊 (ETH)</b> : <code>{eth_address}</code>\n🔼 最低限度: <code>{minimum_eth}</code>\n\n➡️ <b>萊特幣 (LTC)</b> : <code>{ltc_address}</code>\n🔼 最低限度: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "未找到地址。",
+    "license_key": "這是您的許可證：{license_key}",
+    "insufficient_balance": "您的餘額不足。您還差 {missing_amount:.2f}€。",
+    "select_language": "請選擇一種語言。"
+  },
+  "gift": {
+    "provide_valid_amount": "請提供一個有效的金額。例子: /create_gift 20",
+    "gift_amount_zero": "禮品金額不能為零。請提供有效的禮品代碼。",
+    "gift_card_created": "禮品卡已創建：<code>{code}</code> 金額為 {amount}€",
+    "provide_gift_code": "請提供一張禮品卡。例子: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "禮品卡已兌換！{amount}€ 已添加到您的餘額。",
+    "admin_notification": "用戶 {first_name} (ID: {user_id}) 兌換了一張帶有代碼的禮品卡：{code}",
+    "invalid_gift_code": "無效或已使用的禮品代碼。"
+  },
+  "inline": {
+    "profile_button": "👤 個人資料",
+    "buy_license_button": "🛒 購買許可證 - 5€",
+    "top_up_button": "💳 充值",
+    "help_button": "❓ 幫助",
+    "home_button": "🏠 首頁"
+  },
+  "payment": {
+    "add_funds_message": "💸 我們已收到 {result}€ ({value_coin} {coin.upper()})！"
+  }
+}

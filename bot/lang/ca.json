@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Hola <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "No està autoritzat a utilitzar aquesta comanda.",
+    "provide_message": "Si us plau, proporcioni un missatge. Exemple: /dm_all Hola a tothom!",
+    "message_sent": "Missatge enviat a tots els usuaris."
+  },
+  "callback": {
+    "profile_info": "👤 Informació del perfil:\nID: <code><b>{user_id}</b></code>\nNom: <b>{first_name}</b>\nCognom: <b>{last_name}</b>\nNom d'usuari: <b>{username}</b>\nCreat: <b>{creation_date}</b>\nSaldo: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Ajuda</b>\n\n👤 <b>Perfil</b> : Consulteu la informació del vostre compte.\n💳 <b>Recarregar</b> : Afegiu fons al vostre compte a través de criptomonedes.\n🏠 <b>Inici</b> : Torneu a la pantalla principal.\n\n",
+      "admin": "/dm_all [missatge amb formatatge HTML] : Envia un missatge a tots els usuaris excepte els administradors.\n/create_gift [import] : Crea una targeta de regal amb el saldo especificat.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Canvieu una targeta de regal amb el codi proporcionat.\n\nPer a qualsevol pregunta, contacteu amb el nostre suport."
+    },
+    "top_up_message": "💰 <b>Les teves adreces de pagament per criptomonedes</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Mínim: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Mínim: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Mínim: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "No s'han trobat adreces.",
+    "license_key": "Aquí teniu la vostra llicència: {license_key}",
+    "insufficient_balance": "El teu saldo és insuficient. Et falten {missing_amount:.2f}€.",
+    "select_language": "Si us plau, seleccioneu un idioma."
+  },
+  "gift": {
+    "provide_valid_amount": "Si us plau, proporcioni un import vàlid. Exemple: /create_gift 20",
+    "gift_amount_zero": "L'import del regal no pot ser zero. Proporcioni un codi de regal vàlid.",
+    "gift_card_created": "Targeta de regal creada: <code>{code}</code> per {amount}€",
+    "provide_gift_code": "Si us plau, proporcioni una targeta de regal. Exemple: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Targeta de regal canviada! S'han afegit {amount}€ al vostre saldo.",
+    "admin_notification": "L'usuari {first_name} (ID: {user_id}) ha canviat una targeta de regal amb el codi: {code}",
+    "invalid_gift_code": "Targeta de regal no vàlida o ja utilitzada."
+  },
+  "inline": {
+    "profile_button": "👤 Perfil",
+    "buy_license_button": "🛒 Comprar llicència - 5€",
+    "top_up_button": "💳 Recarregar",
+    "help_button": "❓ Ajuda",
+    "home_button": "🏠 Inici"
+  },
+  "payment": {
+    "add_funds_message": "💸 Hem rebut {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

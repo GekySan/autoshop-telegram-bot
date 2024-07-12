@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Salut <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Vous n'êtes pas autorisé à utiliser cette commande.",
+    "provide_message": "Veuillez fournir un message. Exemple : /dm_all Bonjour à tous !",
+    "message_sent": "Message envoyé à tous les utilisateurs."
+  },
+  "callback": {
+    "profile_info": "👤 Informations du profil :\nID: <code><b>{user_id}</b></code>\nPrénom : <b>{first_name}</b>\nNom : <b>{last_name}</b>\nNom d'utilisateur : <b>{username}</b>\nCréé : <b>{creation_date}</b>\nSolde : <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+        "base": "ℹ️ <b>Aide</b>\n\n👤 <b>Profil</b> : Consultez les informations de votre compte.\n💳 <b>Recharger</b> : Ajoutez des fonds à votre compte via des cryptos.\n🏠 <b>Accueil</b> : Retournez à l'écran principal.\n\n",
+        "admin": "/dm_all [message avec formatage HTML] : Envoie un message à tous les utilisateurs sauf les administrateurs.\n/create_gift [montant] : Crée une carte-cadeau avec le solde spécifié.\n",
+        "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Échangez une carte-cadeau en utilisant le code fourni.\n\nPour toute question, contactez notre support."
+    },
+    "top_up_message": "💰 <b>Vos adresses de paiement par cryptomonnaies</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum : <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum : <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum : <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Aucune adresse trouvée.",
+    "license_key": "Voici votre licence : {license_key}",
+    "insufficient_balance": "Votre solde est insuffisant. Il vous manque {missing_amount:.2f}€.",
+    "select_language": "Veuillez sélectionner une langue."
+  },
+  "gift": {
+    "provide_valid_amount": "Veuillez fournir un montant valide. Exemple : /create_gift 20",
+    "gift_amount_zero": "Le montant du cadeau ne peut pas être zéro. Veuillez fournir un code cadeau valide.",
+    "gift_card_created": "Carte cadeau créée : <code>{code}</code> pour {amount}€",
+    "provide_gift_code": "Veuillez fournir une carte cadeau. Exemple : /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Carte cadeau échangée ! {amount}€ ont été ajoutés à votre solde.",
+    "admin_notification": "L'utilisateur {first_name} (ID : {user_id}) a échangé une carte cadeau avec le code : {code}",
+    "invalid_gift_code": "Carte cadeau invalide ou déjà utilisé."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Acheter une licence - 5€",
+    "top_up_button": "💳 Recharger",
+    "help_button": "❓ Aide",
+    "home_button": "🏠 Accueil"
+  },
+  "payment": {
+    "add_funds_message": "💸 Nous avons bien reçu {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Hello <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "You are not authorized to use this command.",
+    "provide_message": "Please provide a message. Example: /dm_all Hello everyone!",
+    "message_sent": "Message sent to all users."
+  },
+  "callback": {
+    "profile_info": "👤 Profile Information:\nID: <code><b>{user_id}</b></code>\nFirst Name: <b>{first_name}</b>\nLast Name: <b>{last_name}</b>\nUsername: <b>{username}</b>\nCreated: <b>{creation_date}</b>\nBalance: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Help</b>\n\n👤 <b>Profile</b> : View your account information.\n💳 <b>Top Up</b> : Add funds to your account via cryptocurrencies.\n🏠 <b>Home</b> : Return to the main screen.\n\n",
+      "admin": "/dm_all [message with HTML formatting] : Send a message to all users except administrators.\n/create_gift [amount] : Create a gift card with the specified balance.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Redeem a gift card using the provided code.\n\nFor any questions, contact our support."
+    },
+    "top_up_message": "💰 <b>Your cryptocurrency payment addresses</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "No addresses found.",
+    "license_key": "Here is your license: {license_key}",
+    "insufficient_balance": "Your balance is insufficient. You are missing {missing_amount:.2f}€.",
+    "select_language": "Please select a language."
+  },
+  "gift": {
+    "provide_valid_amount": "Please provide a valid amount. Example: /create_gift 20",
+    "gift_amount_zero": "The gift amount cannot be zero. Please provide a valid gift code.",
+    "gift_card_created": "Gift card created: <code>{code}</code> for {amount}€",
+    "provide_gift_code": "Please provide a gift card. Example: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Gift card redeemed! {amount}€ has been added to your balance.",
+    "admin_notification": "User {first_name} (ID: {user_id}) redeemed a gift card with code: {code}",
+    "invalid_gift_code": "Invalid or already used gift card code."
+  },
+  "inline": {
+    "profile_button": "👤 Profile",
+    "buy_license_button": "🛒 Buy License - 5€",
+    "top_up_button": "💳 Top Up",
+    "help_button": "❓ Help",
+    "home_button": "🏠 Home"
+  },
+  "payment": {
+    "add_funds_message": "💸 We have received {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

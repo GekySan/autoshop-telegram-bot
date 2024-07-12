@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Ahoj <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Nemáte oprávnění použít tento příkaz.",
+    "provide_message": "Poskytněte prosím zprávu. Příklad: /dm_all Ahoj všichni!",
+    "message_sent": "Zpráva byla odeslána všem uživatelům."
+  },
+  "callback": {
+    "profile_info": "👤 Informace o profilu:\nID: <code><b>{user_id}</b></code>\nJméno: <b>{first_name}</b>\nPříjmení: <b>{last_name}</b>\nUživatelské jméno: <b>{username}</b>\nVytvořeno: <b>{creation_date}</b>\nZůstatek: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Nápověda</b>\n\n👤 <b>Profil</b> : Zobrazte informace o svém účtu.\n💳 <b>Doplnit</b> : Přidejte prostředky na svůj účet prostřednictvím kryptoměn.\n🏠 <b>Domovská stránka</b> : Návrat na hlavní obrazovku.\n\n",
+      "admin": "/dm_all [zpráva s HTML formátováním] : Odeslat zprávu všem uživatelům kromě administrátorů.\n/create_gift [částka] : Vytvořte dárkovou kartu se specifikovaným zůstatkem.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Uplatněte dárkovou kartu pomocí zadaného kódu.\n\nPro jakékoli dotazy kontaktujte naši podporu."
+    },
+    "top_up_message": "💰 <b>Vaše adresy pro platby kryptoměnami</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Nebyla nalezena žádná adresa.",
+    "license_key": "Zde je váš licenční klíč: {license_key}",
+    "insufficient_balance": "Váš zůstatek je nedostatečný. Chybí vám {missing_amount:.2f}€.",
+    "select_language": "Vyberte prosím jazyk."
+  },
+  "gift": {
+    "provide_valid_amount": "Poskytněte prosím platnou částku. Příklad: /create_gift 20",
+    "gift_amount_zero": "Částka dárku nemůže být nula. Poskytněte prosím platný dárkový kód.",
+    "gift_card_created": "Dárková karta vytvořena: <code>{code}</code> na částku {amount}€",
+    "provide_gift_code": "Poskytněte prosím dárkovou kartu. Příklad: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Dárková karta uplatněna! {amount}€ bylo přidáno k vašemu zůstatku.",
+    "admin_notification": "Uživatel {first_name} (ID: {user_id}) uplatnil dárkovou kartu s kódem: {code}",
+    "invalid_gift_code": "Dárkový kód je neplatný nebo již byl použit."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Koupit licenci - 5€",
+    "top_up_button": "💳 Doplnit",
+    "help_button": "❓ Nápověda",
+    "home_button": "🏠 Domů"
+  },
+  "payment": {
+    "add_funds_message": "💸 Přijali jsme {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

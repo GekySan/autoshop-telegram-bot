@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Salom <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Siz ushbu buyruqdan foydalanishga ruxsat etilmadingiz.",
+    "provide_message": "Iltimos, xabar bering. Misol: /dm_all Hammaga salom!",
+    "message_sent": "Xabar barcha foydalanuvchilarga yuborildi."
+  },
+  "callback": {
+    "profile_info": "👤 Profil ma'lumotlari:\nID: <code><b>{user_id}</b></code>\nIsm: <b>{first_name}</b>\nFamiliya: <b>{last_name}</b>\nFoydalanuvchi nomi: <b>{username}</b>\nYaratilgan: <b>{creation_date}</b>\nBalans: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Yordam</b>\n\n👤 <b>Profil</b> : Hisobingiz haqidagi ma'lumotlarni ko'ring.\n💳 <b>To'ldirish</b> : Kriptovalyutalar orqali hisobingizga mablag' qo'shing.\n🏠 <b>Bosh sahifa</b> : Asosiy ekraniga qayting.\n\n",
+      "admin": "/dm_all [HTML formatidagi xabar] : Barcha foydalanuvchilarga administratorlardan tashqari xabar yuboradi.\n/create_gift [miqdor] : Belgilangan balans bilan sovg'a kartasi yarating.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Berilgan koddan foydalanib sovg'a kartasini almashing.\n\nHar qanday savollar uchun bizning qo'llab-quvvatlash xizmatimiz bilan bog'laning."
+    },
+    "top_up_message": "💰 <b>Kriptovalyutalar orqali to'lov manzillaringiz</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimal: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimal: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimal: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Hech qanday manzillar topilmadi.",
+    "license_key": "Mana sizning litsenziyangiz: {license_key}",
+    "insufficient_balance": "Sizning balansingiz yetarli emas. Sizga {missing_amount:.2f}€ yetishmaydi.",
+    "select_language": "Iltimos, tilni tanlang."
+  },
+  "gift": {
+    "provide_valid_amount": "Iltimos, amal qiladigan miqdorni kiriting. Misol: /create_gift 20",
+    "gift_amount_zero": "Sovg'a miqdori nol bo'lishi mumkin emas. Iltimos, amal qiladigan sovg'a kodini kiriting.",
+    "gift_card_created": "Sovg'a kartasi yaratildi: <code>{code}</code> {amount}€ uchun",
+    "provide_gift_code": "Iltimos, sovg'a kartasini kiriting. Misol: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Sovg'a kartasi almashildi! {amount}€ sizning balansingizga qo'shildi.",
+    "admin_notification": "Foydalanuvchi {first_name} (ID: {user_id}) kod bilan sovg'a kartasini almashdi: {code}",
+    "invalid_gift_code": "Amal qilmaydigan yoki allaqachon foydalanilgan sovg'a kod."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Litsenziya sotib oling - 5€",
+    "top_up_button": "💳 To'ldirish",
+    "help_button": "❓ Yordam",
+    "home_button": "🏠 Bosh sahifa"
+  },
+  "payment": {
+    "add_funds_message": "💸 Biz qabul qildik {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

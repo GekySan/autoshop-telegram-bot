@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Kaixo <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Ez zaude baimenduta komando hau erabiltzeko.",
+    "provide_message": "Mesedez, eman mezu bat. Adibidea: /dm_all Kaixo denei!",
+    "message_sent": "Mezua bidali da erabiltzaile guztiei."
+  },
+  "callback": {
+    "profile_info": "👤 Profilaren informazioa:\nID: <code><b>{user_id}</b></code>\nIzena: <b>{first_name}</b>\nAbizena: <b>{last_name}</b>\nErabiltzaile izena: <b>{username}</b>\nSortua: <b>{creation_date}</b>\nSaldoa: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Laguntza</b>\n\n👤 <b>Profila</b> : Ikusi zure kontuaren informazioa.\n💳 <b>Bete</b> : Gehitu funtsak zure kontuan kriptomonedak erabiliz.\n🏠 <b>Hasiera</b> : Itzuli hasierako pantailara.\n\n",
+      "admin": "/dm_all [HTML formatuarekin mezua] : Bidali mezu bat erabiltzaile guztiei administratzaileak izan ezik.\n/create_gift [zenbatekoa] : Sortu opari-txartel bat zehaztutako saldoarekin.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Erabili opari-txartel bat emandako kodearekin.\n\nGalderarik baduzu, jarri harremanetan gure laguntzarekin."
+    },
+    "top_up_message": "💰 <b>Zure kriptomoneda ordainketa helbideak</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Gutxienez: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Gutxienez: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Gutxienez: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Ez dira helbideak aurkitu.",
+    "license_key": "Hona hemen zure lizentzia: {license_key}",
+    "insufficient_balance": "Zure saldoa ez da nahikoa. {missing_amount:.2f}€ falta zaizkizu.",
+    "select_language": "Mesedez, aukeratu hizkuntza bat."
+  },
+  "gift": {
+    "provide_valid_amount": "Mesedez, eman baliozko zenbatekoa. Adibidea: /create_gift 20",
+    "gift_amount_zero": "Opariaren zenbatekoa ezin da zero izan. Eman baliozko opari kode bat.",
+    "gift_card_created": "Opari-txartela sortu da: <code>{code}</code> {amount}€-rako",
+    "provide_gift_code": "Mesedez, eman opari-txartel bat. Adibidea: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Opari-txartela erabili da! {amount}€ gehitu zaizkizu zure saldoan.",
+    "admin_notification": "Erabiltzailea {first_name} (ID: {user_id}) opari-txartel bat erabili du kodearekin: {code}",
+    "invalid_gift_code": "Opari-txartelaren kode baliogabea edo jadanik erabilia."
+  },
+  "inline": {
+    "profile_button": "👤 Profila",
+    "buy_license_button": "🛒 Erosi lizentzia - 5€",
+    "top_up_button": "💳 Bete",
+    "help_button": "❓ Laguntza",
+    "home_button": "🏠 Hasiera"
+  },
+  "payment": {
+    "add_funds_message": "💸 {result}€ jaso ditugu ({value_coin} {coin.upper()}) !"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Γεια σου <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Δεν έχετε άδεια να χρησιμοποιήσετε αυτήν την εντολή.",
+    "provide_message": "Παρακαλώ δώστε ένα μήνυμα. Παράδειγμα: /dm_all Γεια σε όλους!",
+    "message_sent": "Το μήνυμα στάλθηκε σε όλους τους χρήστες."
+  },
+  "callback": {
+    "profile_info": "👤 Πληροφορίες προφίλ:\nID: <code><b>{user_id}</b></code>\nΌνομα: <b>{first_name}</b>\nΕπώνυμο: <b>{last_name}</b>\nΌνομα χρήστη: <b>{username}</b>\nΔημιουργήθηκε: <b>{creation_date}</b>\nΥπόλοιπο: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Βοήθεια</b>\n\n👤 <b>Προφίλ</b> : Δείτε τις πληροφορίες του λογαριασμού σας.\n💳 <b>Ανανέωση</b> : Προσθέστε χρήματα στον λογαριασμό σας μέσω κρυπτονομισμάτων.\n🏠 <b>Αρχική σελίδα</b> : Επιστροφή στην κύρια οθόνη.\n\n",
+      "admin": "/dm_all [μήνυμα με HTML μορφοποίηση] : Αποστολή μηνύματος σε όλους τους χρήστες εκτός από τους διαχειριστές.\n/create_gift [ποσό] : Δημιουργήστε μια δωροκάρτα με το καθορισμένο υπόλοιπο.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Εξαργυρώστε μια δωροκάρτα χρησιμοποιώντας τον παρεχόμενο κωδικό.\n\nΓια οποιαδήποτε ερώτηση, επικοινωνήστε με την υποστήριξή μας."
+    },
+    "top_up_message": "💰 <b>Οι διευθύνσεις πληρωμής σας με κρυπτονομίσματα</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Ελάχιστο: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Ελάχιστο: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Ελάχιστο: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Δεν βρέθηκαν διευθύνσεις.",
+    "license_key": "Ορίστε η άδειά σας: {license_key}",
+    "insufficient_balance": "Το υπόλοιπό σας είναι ανεπαρκές. Σας λείπουν {missing_amount:.2f}€.",
+    "select_language": "Παρακαλώ επιλέξτε μια γλώσσα."
+  },
+  "gift": {
+    "provide_valid_amount": "Παρακαλώ δώστε ένα έγκυρο ποσό. Παράδειγμα: /create_gift 20",
+    "gift_amount_zero": "Το ποσό του δώρου δεν μπορεί να είναι μηδέν. Παρακαλώ δώστε έναν έγκυρο κωδικό δώρου.",
+    "gift_card_created": "Δημιουργήθηκε δωροκάρτα: <code>{code}</code> για {amount}€",
+    "provide_gift_code": "Παρακαλώ δώστε μια δωροκάρτα. Παράδειγμα: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Εξαργυρώθηκε δωροκάρτα! Προστέθηκαν {amount}€ στο υπόλοιπό σας.",
+    "admin_notification": "Ο χρήστης {first_name} (ID: {user_id}) εξαργύρωσε μια δωροκάρτα με τον κωδικό: {code}",
+    "invalid_gift_code": "Μη έγκυρος ή ήδη χρησιμοποιημένος κωδικός δωροκάρτας."
+  },
+  "inline": {
+    "profile_button": "👤 Προφίλ",
+    "buy_license_button": "🛒 Αγορά άδειας - 5€",
+    "top_up_button": "💳 Ανανέωση",
+    "help_button": "❓ Βοήθεια",
+    "home_button": "🏠 Αρχική σελίδα"
+  },
+  "payment": {
+    "add_funds_message": "💸 Λάβαμε {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

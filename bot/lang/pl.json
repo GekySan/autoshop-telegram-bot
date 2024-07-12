@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Cześć <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Nie masz uprawnień do użycia tej komendy.",
+    "provide_message": "Proszę podać wiadomość. Przykład: /dm_all Witajcie wszyscy!",
+    "message_sent": "Wiadomość została wysłana do wszystkich użytkowników."
+  },
+  "callback": {
+    "profile_info": "👤 Informacje o profilu:\nID: <code><b>{user_id}</b></code>\nImię: <b>{first_name}</b>\nNazwisko: <b>{last_name}</b>\nNazwa użytkownika: <b>{username}</b>\nUtworzono: <b>{creation_date}</b>\nSaldo: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Pomoc</b>\n\n👤 <b>Profil</b> : Wyświetl informacje o swoim koncie.\n💳 <b>Doładuj</b> : Dodaj środki do swojego konta za pomocą kryptowalut.\n🏠 <b>Strona główna</b> : Wróć do ekranu głównego.\n\n",
+      "admin": "/dm_all [wiadomość z formatowaniem HTML] : Wyślij wiadomość do wszystkich użytkowników z wyjątkiem administratorów.\n/create_gift [kwota] : Utwórz kartę podarunkową z określonym saldem.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Zrealizuj kartę podarunkową przy użyciu podanego kodu.\n\nW przypadku pytań skontaktuj się z naszym wsparciem."
+    },
+    "top_up_message": "💰 <b>Twoje adresy płatności kryptowalutowych</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Nie znaleziono żadnych adresów.",
+    "license_key": "Oto Twój klucz licencyjny: {license_key}",
+    "insufficient_balance": "Twoje saldo jest niewystarczające. Brakuje Ci {missing_amount:.2f}€.",
+    "select_language": "Proszę wybrać język."
+  },
+  "gift": {
+    "provide_valid_amount": "Proszę podać prawidłową kwotę. Przykład: /create_gift 20",
+    "gift_amount_zero": "Kwota karty podarunkowej nie może wynosić zero. Proszę podać prawidłowy kod karty podarunkowej.",
+    "gift_card_created": "Karta podarunkowa utworzona: <code>{code}</code> na kwotę {amount}€",
+    "provide_gift_code": "Proszę podać kartę podarunkową. Przykład: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Karta podarunkowa zrealizowana! {amount}€ zostało dodane do Twojego salda.",
+    "admin_notification": "Użytkownik {first_name} (ID: {user_id}) zrealizował kartę podarunkową z kodem: {code}",
+    "invalid_gift_code": "Nieprawidłowy lub już użyty kod karty podarunkowej."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Kup licencję - 5€",
+    "top_up_button": "💳 Doładuj",
+    "help_button": "❓ Pomoc",
+    "home_button": "🏠 Strona główna"
+  },
+  "payment": {
+    "add_funds_message": "💸 Otrzymaliśmy {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

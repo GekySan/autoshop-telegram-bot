@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Halo <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Anda tidak berhak menggunakan perintah ini.",
+    "provide_message": "Silakan berikan pesan. Contoh: /dm_all Halo semuanya!",
+    "message_sent": "Pesan terkirim ke semua pengguna."
+  },
+  "callback": {
+    "profile_info": "👤 Informasi Profil:\nID: <code><b>{user_id}</b></code>\nNama Depan: <b>{first_name}</b>\nNama Belakang: <b>{last_name}</b>\nNama Pengguna: <b>{username}</b>\nDibuat: <b>{creation_date}</b>\nSaldo: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Bantuan</b>\n\n👤 <b>Profil</b> : Lihat informasi akun Anda.\n💳 <b>Isi Ulang</b> : Tambahkan dana ke akun Anda melalui cryptocurrency.\n🏠 <b>Beranda</b> : Kembali ke layar utama.\n\n",
+      "admin": "/dm_all [pesan dengan format HTML] : Kirim pesan ke semua pengguna kecuali administrator.\n/create_gift [jumlah] : Buat kartu hadiah dengan saldo yang ditentukan.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Tukarkan kartu hadiah menggunakan kode yang diberikan.\n\nUntuk pertanyaan apapun, hubungi dukungan kami."
+    },
+    "top_up_message": "💰 <b>Alamat pembayaran cryptocurrency Anda</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Tidak ada alamat yang ditemukan.",
+    "license_key": "Berikut adalah lisensi Anda: {license_key}",
+    "insufficient_balance": "Saldo Anda tidak mencukupi. Anda kekurangan {missing_amount:.2f}€.",
+    "select_language": "Silakan pilih bahasa."
+  },
+  "gift": {
+    "provide_valid_amount": "Silakan berikan jumlah yang valid. Contoh: /create_gift 20",
+    "gift_amount_zero": "Jumlah hadiah tidak boleh nol. Berikan kode hadiah yang valid.",
+    "gift_card_created": "Kartu hadiah dibuat: <code>{code}</code> untuk {amount}€",
+    "provide_gift_code": "Silakan berikan kartu hadiah. Contoh: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Kartu hadiah ditukarkan! {amount}€ telah ditambahkan ke saldo Anda.",
+    "admin_notification": "Pengguna {first_name} (ID: {user_id}) menukarkan kartu hadiah dengan kode: {code}",
+    "invalid_gift_code": "Kode kartu hadiah tidak valid atau sudah digunakan."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Beli Lisensi - 5€",
+    "top_up_button": "💳 Isi Ulang",
+    "help_button": "❓ Bantuan",
+    "home_button": "🏠 Beranda"
+  },
+  "payment": {
+    "add_funds_message": "💸 Kami telah menerima {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

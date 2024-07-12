@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Hola <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "No está autorizado para usar este comando.",
+    "provide_message": "Por favor proporcione un mensaje. Ejemplo: /dm_all ¡Hola a todos!",
+    "message_sent": "Mensaje enviado a todos los usuarios."
+  },
+  "callback": {
+    "profile_info": "👤 Información del perfil:\nID: <code><b>{user_id}</b></code>\nNombre: <b>{first_name}</b>\nApellido: <b>{last_name}</b>\nNombre de usuario: <b>{username}</b>\nCreado: <b>{creation_date}</b>\nSaldo: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Ayuda</b>\n\n👤 <b>Perfil</b> : Consulte la información de su cuenta.\n💳 <b>Recargar</b> : Agregue fondos a su cuenta a través de criptomonedas.\n🏠 <b>Inicio</b> : Vuelve a la pantalla principal.\n\n",
+      "admin": "/dm_all [mensaje con formato HTML] : Envía un mensaje a todos los usuarios excepto los administradores.\n/create_gift [monto] : Crea una tarjeta de regalo con el saldo especificado.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Canjee una tarjeta de regalo utilizando el código proporcionado.\n\nPara cualquier pregunta, póngase en contacto con nuestro soporte."
+    },
+    "top_up_message": "💰 <b>Sus direcciones de pago con criptomonedas</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Mínimo: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Mínimo: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Mínimo: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "No se encontraron direcciones.",
+    "license_key": "Aquí está su licencia: {license_key}",
+    "insufficient_balance": "Su saldo es insuficiente. Le faltan {missing_amount:.2f}€.",
+    "select_language": "Por favor seleccione un idioma."
+  },
+  "gift": {
+    "provide_valid_amount": "Por favor proporcione un monto válido. Ejemplo: /create_gift 20",
+    "gift_amount_zero": "El monto del regalo no puede ser cero. Proporcione un código de regalo válido.",
+    "gift_card_created": "Tarjeta de regalo creada: <code>{code}</code> por {amount}€",
+    "provide_gift_code": "Por favor proporcione una tarjeta de regalo. Ejemplo: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "¡Tarjeta de regalo canjeada! {amount}€ se ha añadido a su saldo.",
+    "admin_notification": "El usuario {first_name} (ID: {user_id}) canjeó una tarjeta de regalo con el código: {code}",
+    "invalid_gift_code": "Código de tarjeta de regalo inválido o ya usado."
+  },
+  "inline": {
+    "profile_button": "👤 Perfil",
+    "buy_license_button": "🛒 Comprar licencia - 5€",
+    "top_up_button": "💳 Recargar",
+    "help_button": "❓ Ayuda",
+    "home_button": "🏠 Inicio"
+  },
+  "payment": {
+    "add_funds_message": "💸 Hemos recibido {result}€ ({value_coin} {coin.upper()}) !"
+  }
+}

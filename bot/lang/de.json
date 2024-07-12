@@ -1,0 +1,42 @@
+{
+  "start": {
+    "welcome_message": "👋 Hallo <b>{first_name}</b> !"
+  },
+  "admin": {
+    "unauthorized_command": "Sie sind nicht berechtigt, diesen Befehl zu verwenden.",
+    "provide_message": "Bitte geben Sie eine Nachricht ein. Beispiel: /dm_all Hallo an alle!",
+    "message_sent": "Nachricht an alle Benutzer gesendet."
+  },
+  "callback": {
+    "profile_info": "👤 Profilinformationen:\nID: <code><b>{user_id}</b></code>\nVorname: <b>{first_name}</b>\nNachname: <b>{last_name}</b>\nBenutzername: <b>{username}</b>\nErstellt: <b>{creation_date}</b>\nGuthaben: <b>{balance_eur:.2f}€</b>",
+    "help_message": {
+      "base": "ℹ️ <b>Hilfe</b>\n\n👤 <b>Profil</b> : Anzeigen der Kontoinformationen.\n💳 <b>Aufladen</b> : Fügen Sie Ihrem Konto Mittel über Kryptowährungen hinzu.\n🏠 <b>Startseite</b> : Zurück zum Hauptbildschirm.\n\n",
+      "admin": "/dm_all [Nachricht mit HTML-Formatierung] : Senden Sie eine Nachricht an alle Benutzer außer den Administratoren.\n/create_gift [Betrag] : Erstellen Sie eine Geschenkkarte mit dem angegebenen Guthaben.\n",
+      "user": "/redeem_gift [XXXXX-XXXXX-XXXXX-XXXXX] : Lösen Sie eine Geschenkkarte mit dem bereitgestellten Code ein.\n\nBei Fragen wenden Sie sich an unseren Support."
+    },
+    "top_up_message": "💰 <b>Ihre Krypto-Zahlungsadressen</b> :\n\n➡️ <b>Bitcoin (BTC)</b> : <code>{btc_address}</code>\n🔼 Minimum: <code>{minimum_btc}</code>\n\n➡️ <b>Ethereum (ETH)</b> : <code>{eth_address}</code>\n🔼 Minimum: <code>{minimum_eth}</code>\n\n➡️ <b>Litecoin (LTC)</b> : <code>{ltc_address}</code>\n🔼 Minimum: <code>{minimum_ltc}</code>\n",
+    "no_addresses_found": "Keine Adressen gefunden.",
+    "license_key": "Hier ist Ihr Lizenzschlüssel: {license_key}",
+    "insufficient_balance": "Ihr Guthaben ist unzureichend. Es fehlen Ihnen {missing_amount:.2f}€.",
+    "select_language": "Bitte wählen Sie eine Sprache."
+  },
+  "gift": {
+    "provide_valid_amount": "Bitte geben Sie einen gültigen Betrag ein. Beispiel: /create_gift 20",
+    "gift_amount_zero": "Der Geschenkbetrag kann nicht null sein. Bitte geben Sie einen gültigen Geschenkgutschein-Code ein.",
+    "gift_card_created": "Geschenkkarte erstellt: <code>{code}</code> für {amount}€",
+    "provide_gift_code": "Bitte geben Sie eine Geschenkkarte an. Beispiel: /redeem_gift XXXXX-XXXX-XXXX-XXXX",
+    "gift_card_redeemed": "Geschenkkarte eingelöst! {amount}€ wurden Ihrem Guthaben hinzugefügt.",
+    "admin_notification": "Der Benutzer {first_name} (ID: {user_id}) hat eine Geschenkkarte mit dem Code eingelöst: {code}",
+    "invalid_gift_code": "Ungültiger oder bereits verwendeter Geschenkkarten-Code."
+  },
+  "inline": {
+    "profile_button": "👤 Profil",
+    "buy_license_button": "🛒 Lizenz kaufen - 5€",
+    "top_up_button": "💳 Aufladen",
+    "help_button": "❓ Hilfe",
+    "home_button": "🏠 Startseite"
+  },
+  "payment": {
+    "add_funds_message": "💸 Wir haben {result}€ ({value_coin} {coin.upper()}) erhalten!"
+  }
+}
